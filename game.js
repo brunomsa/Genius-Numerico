@@ -10,7 +10,7 @@ sessionStorage.clear()
 
 setTimeout(function () {
     geraValor()
-}, 600)
+}, 500)
 
 function geraValor() {
     visor.style.borderColor = '#d2c4aa'
@@ -29,7 +29,7 @@ function mostraNum() {
     for (let X in jogo) {
         setTimeout(function () {
             visor.innerHTML = jogo[X]
-        }, 600 * X)
+        }, 1200 * X)
     }
     apagaVisor()
     console.log(`Jogo: ` + jogo)
@@ -47,7 +47,7 @@ function mostraNum() {
             sessionStorage.setItem("pontuacao", pontuacao);
             location.href = "fim.html"
         }
-    }, 2000 * jogo.length)
+    }, 3000 * jogo.length)
 }
 
 function inserir(num) {
@@ -59,7 +59,7 @@ function inserir(num) {
 }
 
 function apagaVisor() {
-    setTimeout(function () { visor.innerHTML = " " }, 600 * jogo.length)
+    setTimeout(function () { visor.innerHTML = " " }, 1200 * jogo.length)
 }
 
 
