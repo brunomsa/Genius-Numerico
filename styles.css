@@ -1,0 +1,191 @@
+
+body,html{
+    background-color: #1c2b2dd3;
+    height:100%; /*deixa as páginas ocupando a tela inteira do dispositivo*/
+}
+
+input, select { /*Retira confirações de inputs e selects pré setadas pelo bootstrap */
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+/* CONFIGURAÇÕES PÁGINA INICIAL*/
+/* -----------------------------*/
+
+.icone{
+    color: #e1d2b7;
+    float: right; /*Alinha ícone de ranking à esquerda*/
+    margin-top: 30px;
+}
+
+.titulo{
+    color: #e1d2b7;
+    font-family: Knewave;
+    margin-top: 20PX;
+}
+
+.cor{color: #1f6f8b} /*Coloca cor nos números da home*/
+
+.main{ /*div que alinha todo o contéudo da página, ao centro*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80%;
+}
+
+.btn-secondary, .btn-secondary:hover{ /*Configurções do botão "Iniciar Jogo"*/
+    background: #1f6f8b;
+    color:  #e1d2b7;
+    width: 100%;
+    height: 30%;
+    border: 3px solid #99a8b2;
+    font-size: 2em;
+    margin-top: 200px;
+}
+
+
+/* CONFIGURAÇÕES PÁGINA DO JOGO*/
+/* -----------------------------*/
+
+.main2{
+    padding-top: 80px; /*Afasta o visor e teclas do top da página */
+}
+
+#visor{ /*div de configuração do box do visor*/
+    height: 150px;
+    width: 200px ;
+    margin: auto;
+    display: block;
+    align-items: center;
+}
+
+#txtVisor{ /*configuração do texto dentro do visor*/
+    border: 4px solid #d2c4aa;
+    border-radius: 15px; /*arredonda a borda*/
+    color: #d2c4aa;
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+}
+
+#teclas{ /*alinha teclas para o centro*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+}
+
+#teclas > input {
+    padding: 5px 30px;
+    border: 3px solid #1f6f8b;
+    background: #1c2b2dd3;
+    color: #99a8b2;
+}
+
+#seta{ /*alinha ícone de voltar à esquerda*/
+    float: left;
+}
+
+
+/* CONFIGURAÇÕES PÁGINA GAME OVER*/
+/* -----------------------------*/
+
+.main3{ /*div que alinha todo o contéudo da página, ao centro*/  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 30%;
+}
+
+.txtFim{ /*alinha div de texto de fim e score*/
+    text-align: center;
+    justify-content: center;
+}
+
+.txtFim > h1{
+    color: #d2c4aa;
+    font-size: 3sem;
+}
+
+.score{ /*ajusta posição do pontos*/
+    text-align: center;
+    color: #d2c4aa;
+    margin-top: 50px;
+}
+
+#total{ /*tamanho da pontuação*/
+    font-size: 5em;
+}
+
+.box{ /*alinha caixa para digitar o nome e botão de ranking*/   
+    text-align: center;
+    justify-content: center;
+}
+
+#nome{ /*formatação box nome*/
+    background: #1c2b2dd3;
+    border-radius: 8px;
+    border: 3px solid #1f6f8b;
+    color: #99a8b2;
+    padding: 10px;
+    width: 70%;
+    height: 70px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+#btnRanking{ /*formatação botão ranking*/
+    background: #1f6f8b;
+    border-radius: 8px;
+    border: 3px solid #99a8b2;
+    color: #d2c4aa;
+    padding: 10px;
+    width: 70%;
+    height: 70px;
+    font-size: 1.5em;
+}
+
+
+
+/* CONFIGURAÇÕES PÁGINA DE RANKING*/
+/* -----------------------------*/
+
+.titRank{
+    text-align: center;
+}
+.titRank > h1{
+    margin-top: 50px;
+    color: #d2c4aa;
+}
+
+.boxLista{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#lista{
+    width: 60%;
+    background: #1c2b2dd3;
+    color: #1f6f8b;
+    font-weight: bolder;
+    padding: 20px;
+    font-size: 1.5em;
+    overflow: auto;
+    height: 500px;
+}
+
+.nome{
+    margin-left: 20px;
+}
+
+.pontos{
+    float: right;
+    text-align: center;
+}
+
+
+
