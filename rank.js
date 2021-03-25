@@ -2,12 +2,11 @@ const url = 'https://api.sheety.co/5bb57b0e3901a66191d71e8fc052b189/geniusApi/da
 var i = 1
 
 function carregaRank() {
-    let divLista = document.getElementById('lista')
-    let texto = ''
+    let lista = document.getElementById('lista')
 
     fetch(url)
         .then(response => response.json())
-        
+
 
         .then(response => {
             data = response.dados
@@ -16,28 +15,31 @@ function carregaRank() {
 
         .then(response => {
             data.forEach(function (user) {
-
+                let item = document.createElement("li");
                 if (i >= 1 && i <= 3) {
-                    texto = texto + `
-                    <div style="color: #e1d2b7;">
-                    <span class="lugar">${i}</span>
-                    <span class="nome">${user.name}</span>
-                    <span class="pontos">${user.score}</span><br>
-                    </div>
+
+                    item.classList.add("item");
+                    item.innerHTML = `
+                    <li style="color: #e1d2b7;">
+                        <span class="lugar">${i}</span>
+                        <span class="nome">${user.name}</span>
+                        <span class="pontos">${user.score}</span><br>
+                    </li>
                     `
+                    lista.appendChild(item)
                 }
                 else {
-                    texto = texto + `
-                    <div style="color: ##1f6f8b;">
+                    item.innerHTML = `
+                    <li style="color: ##1f6f8b;">
                         <span class="lugar" style="width: 20px;">${i}</span>
                         <span class="nome">${user.name}</span>
                         <span class="pontos">${user.score}</span><br>
-                    </div>
+                    </li>
                     `
+                    lista.appendChild(item)
                 }
                 i++
-            })
-            divLista.innerHTML = texto
+            })  
         })
 
     function ordena(a, b) {
