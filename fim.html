@@ -54,20 +54,23 @@
     <script>
         document.getElementById("total").innerHTML = sessionStorage.getItem("pontuacao")
 
+        const url = 'https://api.sheety.co/5bb57b0e3901a66191d71e8fc052b189/geniusApi/dados'
         let nome = document.getElementById('nome')
         let pontuacao = sessionStorage.getItem("pontuacao")
         let form = document.getElementById('form')
 
         form.addEventListener("submit", (event) => {
             event.preventDefault();
-            let data = {
-                name: nome.value,
-                score: Number(pontuacao)
+            let user = {
+                dado: {
+                    name: nome.value,
+                    score: Number(pontuacao)
+                }
             }
-            fetch('https://us-central1-prova-front-letras.cloudfunctions.net/save', {
+            fetch(url, {
+                headers: { 'Content-Type': 'application/json' },
                 method: 'POST',
-                body: JSON.stringify(data)
-
+                body: JSON.stringify(user)
             })
                 .then(res => res.json())
                 .then(res => console.log(res));
@@ -76,7 +79,7 @@
         function mostraRank() {
             setTimeout(function () {
                 location.href = "ranking.html"
-            },400)
+            },550)
         }
     </script>
 
