@@ -31,10 +31,51 @@
             </div>
 
             <div class="col-12">
-                <a href="www/jogo.html"><button type="button" class="btn btn-secondary">Iniciar Jogo</button></a>
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Iniciar
+                    Jogo</button>
+
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content" style="background:#e1d2b7;">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLongTitle">Instruções do Jogo</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" style="text-align:left;">
+                            <p>
+                                O jogo lembra aquele famoso jogo de memória chamado "Genius". Porém aqui, ao invés de
+                                sequência de cores, você deve acertar a sequência de números que são mostrados no visor.
+                                <br>
+                                <br><strong>Atenção</strong> para os seguintes tópicos:
+                            <ul>
+                                <li>Você terá tempo para finalizar cada rodada, então seja o mais <strong>rápido</strong> possível;</li>
+                                <li>Repare que na vez do computador o visor fica com borda dourada e na sua ele fica com
+                                    borda azul;</li>
+                                <li>Os números são aleatórios de 1 a 9.</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="www/jogo.html"><button type="button" class="btn btn-primary" style="background:#1f6f8b ;">Vamos Lá!</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

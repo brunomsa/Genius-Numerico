@@ -15,12 +15,12 @@ setTimeout(function () {
 function geraValor() {
     visor.style.borderColor = '#d2c4aa'
     num = (Math.floor(Math.random() * 9 + 1))
-    if (num != jogo[jogo.length - 1] ) {
+    if (num != jogo[jogo.length - 1]) {
         jogo.push(num)
         mostraNum()
     }
     else
-    geraValor() 
+        geraValor()
 
     user = []
 }
@@ -47,7 +47,7 @@ function mostraNum() {
             sessionStorage.setItem("pontuacao", pontuacao);
             location.href = "fim.html"
         }
-    }, 3000 * jogo.length)
+    }, 2000 * jogo.length)
 }
 
 function inserir(num) {
