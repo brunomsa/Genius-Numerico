@@ -1,17 +1,17 @@
+const url = 'https://api.sheety.co/5bb57b0e3901a66191d71e8fc052b189/geniusApi/dados'
 var i = 1
 
 function carregaRank() {
     let divLista = document.getElementById('lista')
     let texto = ''
 
-    fetch('https://us-central1-prova-front-letras.cloudfunctions.net/ranking')
+    fetch(url)
         .then(response => response.json())
         
 
         .then(response => {
-            data = response
+            data = response.dados
             data.sort(ordena)
-            console.log(response)
         })
 
         .then(response => {

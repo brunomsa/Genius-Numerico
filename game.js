@@ -32,18 +32,18 @@ function mostraNum() {
         }, 1200 * X)
     }
     apagaVisor()
-    console.log(`Jogo: ` + jogo)
+    //console.log(`Jogo: ` + jogo)
 
     setTimeout(function () {
         if (jogo.join(',') === user.join(',')) {
             pontuacao++
             acertou = true
-            console.log(acertou)
+            //console.log(acertou)
             geraValor()
         }
         else {
             acertou = false
-            console.log(acertou)
+            //console.log(acertou)
             sessionStorage.setItem("pontuacao", pontuacao);
             location.href = "fim.html"
         }
@@ -55,7 +55,7 @@ function inserir(num) {
     visor.style.color = '#99a8b2'
     visor.innerHTML = num
     user.push(num)
-    console.log(`Usuário: ` + user)
+    //console.log(`Usuário: ` + user)
 }
 
 function apagaVisor() {
