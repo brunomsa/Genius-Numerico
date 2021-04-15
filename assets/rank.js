@@ -1,45 +1,43 @@
-const url = 'https://api.sheety.co/5bb57b0e3901a66191d71e8fc052b189/geniusApi/dados'
 var i = 1
 
 function carregaRank() {
-    let lista = document.getElementById('lista')
+    let divLista = document.getElementById('lista')
+    let texto = ''
 
-    fetch(url)
+    fetch('https://us-central1-prova-front-letras.cloudfunctions.net/ranking')
         .then(response => response.json())
-
+        
 
         .then(response => {
-            data = response.dados
+            data = response
             data.sort(ordena)
+            console.log(response)
         })
 
         .then(response => {
             data.forEach(function (user) {
-                let item = document.createElement("li");
-                if (i >= 1 && i <= 3) {
 
-                    item.classList.add("item");
-                    item.innerHTML = `
-                    <li style="color: #e1d2b7;">
-                        <span class="lugar">${i}</span>
-                        <span class="nome">${user.name}</span>
-                        <span class="pontos">${user.score}</span><br>
-                    </li>
+                if (i >= 1 && i <= 3) {
+                    texto = texto + `
+                    <div style="color: #e1d2b7;">
+                    <span class="lugar">${i}</span>
+                    <span class="nome">${user.name}</span>
+                    <span class="pontos">${user.score}</span><br>
+                    </div>
                     `
-                    lista.appendChild(item)
                 }
                 else {
-                    item.innerHTML = `
-                    <li style="color: ##1f6f8b;">
+                    texto = texto + `
+                    <div style="color: ##1f6f8b;">
                         <span class="lugar" style="width: 20px;">${i}</span>
                         <span class="nome">${user.name}</span>
                         <span class="pontos">${user.score}</span><br>
-                    </li>
+                    </div>
                     `
-                    lista.appendChild(item)
                 }
                 i++
-            })  
+            })
+            divLista.innerHTML = texto
         })
 
     function ordena(a, b) {
