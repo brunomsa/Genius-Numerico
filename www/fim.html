@@ -63,10 +63,8 @@
         form.addEventListener("submit", (event) => {
             event.preventDefault();
             let user = {
-                dado: {
-                    name: nome.value,
-                    score: Number(pontuacao)
-                }
+                name: nome.value,
+                score: Number(pontuacao)
             }
             fetch(url, {
                 headers: { 'Content-Type': 'application/json' },

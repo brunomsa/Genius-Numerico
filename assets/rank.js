@@ -6,9 +6,6 @@ function carregaRank() {
 
     fetch(url)
         .then(response => response.json())
-        .then(response => console.log(response))
-
-
         .then(response => {
             data = response
             data.sort(ordena)

@@ -1,24 +1,41 @@
 {
-    "ranking": [
-        {
-            "id": 1,
-            "name": "Bruninho Andrade",
-            "score": 20
-        },
-        {
-            "id": 2,
-            "name": "Teste AAA",
-            "score": 5
-        },
-        {
-            "id": 3,
-            "name": "Teste BBB",
-            "score": 8
-        },
-        {
-            "id": 4,
-            "name": "Teste CCC",
-            "score": 2
-        }
-    ]
+  "ranking": [
+    {
+      "id": 1,
+      "name": "Bruninho Andrade",
+      "score": 20
+    },
+    {
+      "id": 2,
+      "name": "Teste AAA",
+      "score": 5
+    },
+    {
+      "id": 3,
+      "name": "Teste BBB",
+      "score": 8
+    },
+    {
+      "id": 4,
+      "name": "Teste CCC",
+      "score": 2
+    },
+    {
+      "dado": {
+        "name": "aaa",
+        "score": 0
+      },
+      "id": 5
+    },
+    {
+      "name": "Teste 333",
+      "score": 0,
+      "id": 6
+    },
+    {
+      "name": "Errrouu",
+      "score": 1,
+      "id": 7
+    }
+  ]
 }
