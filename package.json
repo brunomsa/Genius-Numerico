@@ -1,0 +1,23 @@
+{
+  "name": "Genius-Numerico",
+  "version": "1.0.0",
+  "description": "Jogo de memória responsivo, com ranking de jogadores",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunomsa/Genius-Numerico.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunomsa/Genius-Numerico/issues"
+  },
+  "homepage": "https://github.com/brunomsa/Genius-Numerico#readme"
+}

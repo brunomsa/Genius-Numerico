@@ -1,4 +1,4 @@
-const url = 'https://api.sheety.co/5bb57b0e3901a66191d71e8fc052b189/geniusApi/dados'
+const url = 'http://localhost:3000/ranking'
 var i = 1
 
 function carregaRank() {
@@ -6,10 +6,11 @@ function carregaRank() {
 
     fetch(url)
         .then(response => response.json())
+        .then(response => console.log(response))
 
 
         .then(response => {
-            data = response.dados
+            data = response
             data.sort(ordena)
         })
 
