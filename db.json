@@ -2,40 +2,43 @@
   "ranking": [
     {
       "id": 1,
-      "name": "Bruninho Andrade",
+      "name": "Lula Moslusco",
       "score": 20
     },
     {
       "id": 2,
-      "name": "Teste AAA",
-      "score": 5
+      "name": "Bob Sponja",
+      "score": 53
     },
     {
       "id": 3,
-      "name": "Teste BBB",
-      "score": 8
+      "name": "Batman",
+      "score": 104
     },
     {
       "id": 4,
-      "name": "Teste CCC",
-      "score": 2
+      "name": "Superman",
+      "score": 25
     },
     {
-      "dado": {
-        "name": "aaa",
-        "score": 0
-      },
-      "id": 5
-    },
-    {
-      "name": "Teste 333",
-      "score": 0,
+      "name": "Flash",
+      "score": 80,
       "id": 6
     },
     {
-      "name": "Errrouu",
-      "score": 1,
+      "name": "Homem-Aranha",
+      "score": 18,
       "id": 7
+    },
+    {
+      "name": "Tony Stark",
+      "score": 94,
+      "id": 8
+    },
+    {
+      "name": "Steve Rogers",
+      "score": 40,
+      "id": 9
     }
   ]
 }
